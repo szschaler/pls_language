@@ -273,7 +273,7 @@
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_oquuFHPCEeisy7_gJPsTbA">
         <target xmi:type="pls:Hammer" href="basic.pls#//@elements.7"/>
         <semanticElements xmi:type="pls:Hammer" href="basic.pls#//@elements.7"/>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_oquuFXPCEeisy7_gJPsTbA" labelPosition="node" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Hammer.png">
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_oquuFXPCEeisy7_gJPsTbA" labelColor="125,125,125" borderColor="125,125,125">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Conveyor']/@subNodeMappings[name='HammerInConveyor']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Conveyor']/@subNodeMappings[name='HammerInConveyor']"/>
