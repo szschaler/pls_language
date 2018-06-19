@@ -28,7 +28,7 @@
             id="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelEditorID"
             name="%_UI_ModelEditor_label"
             icon="icons/full/obj16/ModelModelFile.gif"
-            extensions="model"
+            extensions="pls"
             class="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelEditor"
             contributorClass="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelActionBarContributor">
       </editor>
