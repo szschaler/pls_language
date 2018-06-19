@@ -12,12 +12,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelModelWizardID"
-            name="%_UI_ModelModelWizard_label"
-            class="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelModelWizard"
+            id="uk.ac.kcl.inf.modelling.pls.pls.presentation.PLSModelWizardID"
+            name="%_UI_PLSModelWizard_label"
+            class="uk.ac.kcl.inf.modelling.pls.pls.presentation.PLSModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/ModelModelFile.gif">
-         <description>%_UI_ModelModelWizard_description</description>
+            icon="icons/full/obj16/PLSModelFile.gif">
+         <description>%_UI_PLSModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -25,13 +25,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated model -->
       <editor
-            id="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelEditorID"
-            name="%_UI_ModelEditor_label"
-            icon="icons/full/obj16/ModelModelFile.gif"
+            id="uk.ac.kcl.inf.modelling.pls.pls.presentation.PLSEditorID"
+            name="%_UI_PLSEditor_label"
+            icon="icons/full/obj16/PLSModelFile.gif"
             extensions="pls"
-            class="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelEditor"
-            contributorClass="uk.ac.kcl.inf.modelling.pls.model.presentation.ModelActionBarContributor">
+            class="uk.ac.kcl.inf.modelling.pls.pls.presentation.PLSEditor"
+            contributorClass="uk.ac.kcl.inf.modelling.pls.pls.presentation.PLSActionBarContributor">
       </editor>
    </extension>
-
 </plugin>

@@ -9,8 +9,8 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated model -->
       <factory
-            uri="http://www.example.org/model"
-            class="uk.ac.kcl.inf.modelling.pls.model.provider.ModelItemProviderAdapterFactory"
+            uri="https://inf.kcl.ac.uk/models/pls"
+            class="uk.ac.kcl.inf.modelling.pls.pls.provider.PLSItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:pls="https://inf.kcl.ac.uk/models/pls" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis xmi:id="_7QbpcHO4Eei9k-NrvV1AVA" selectedViews="_4un-kHO5Eei4m46xOMSSgg" version="12.1.0.201708031200">
+    <semanticResources>basic.pls</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_4un-kHO5Eei4m46xOMSSgg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_7fYO8HO5Eei4m46xOMSSgg" name="Production Line Diagram" repPath="#_7ek9sHO5Eei4m46xOMSSgg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']"/>
+        <target xmi:type="pls:ProductionLineModel" href="basic.pls#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_7fN24HO5Eei4m46xOMSSgg" name="Production Line Diagram" uid="_7ek9sHO5Eei4m46xOMSSgg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_7fN24XO5Eei4m46xOMSSgg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_7fN24nO5Eei4m46xOMSSgg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_7f2wEHO5Eei4m46xOMSSgg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_7f2wEXO5Eei4m46xOMSSgg" type="Sirius" element="_7fN24HO5Eei4m46xOMSSgg" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_7f2wEnO5Eei4m46xOMSSgg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_7fN25HO5Eei4m46xOMSSgg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/uk.ac.kcl.inf.modelling.pls.design/description/pls.odesign#//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer"/>
+    <target xmi:type="pls:ProductionLineModel" href="basic.pls#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
