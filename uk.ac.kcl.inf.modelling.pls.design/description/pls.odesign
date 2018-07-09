@@ -47,7 +47,7 @@
         </edgeMappings>
         <containerMappings name="Conveyor" domainClass="Conveyor" childrenPresentation="List">
           <subNodeMappings name="HammerInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Hammer))" domainClass="Hammer"/>
-          <subNodeMappings name="HeadInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head)" domainClass="Head"/>
+          <subNodeMappings name="HeadInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head))" domainClass="Head"/>
           <subNodeMappings name="HandleInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Handle))" domainClass="Handle"/>
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Conveyor.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -56,7 +56,7 @@
         </containerMappings>
         <containerMappings name="Tray" domainClass="Tray" childrenPresentation="List">
           <subNodeMappings name="HammerInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Hammer))" domainClass="Hammer"/>
-          <subNodeMappings name="HeadInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head)" domainClass="Head"/>
+          <subNodeMappings name="HeadInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head))" domainClass="Head"/>
           <subNodeMappings name="HandleInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Handle))" domainClass="Handle"/>
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Tray.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
