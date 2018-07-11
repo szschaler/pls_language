@@ -108,11 +108,14 @@
       <nodes xmi:id="_q0eE8HPGEei-YvDU9wix2w" incoming="_wFFC8HPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Conveyor"/>
       </nodes>
-      <nodes xmi:id="_rdUNoHPGEei-YvDU9wix2w" incoming="_vOwe8HPGEei-YvDU9wix2w">
+      <nodes xmi:id="_rdUNoHPGEei-YvDU9wix2w" incoming="_vOwe8HPGEei-YvDU9wix2w _RrY08IUPEei0FfH_M_cW1g">
         <type href="https://inf.kcl.ac.uk/models/pls#//Handle"/>
       </nodes>
-      <nodes xmi:id="_ryJOIHPGEei-YvDU9wix2w" incoming="_vdhTsHPGEei-YvDU9wix2w">
+      <nodes xmi:id="_ryJOIHPGEei-YvDU9wix2w" incoming="_vdhTsHPGEei-YvDU9wix2w _lCqWMIUQEeix5NK6BRBUTA">
         <type href="https://inf.kcl.ac.uk/models/pls#//Head"/>
+      </nodes>
+      <nodes xmi:id="_QCLbcIUPEei0FfH_M_cW1g" outgoing="_RrY08IUPEei0FfH_M_cW1g _lCqWMIUQEeix5NK6BRBUTA">
+        <type href="https://inf.kcl.ac.uk/models/pls#//ProductionLineModel"/>
       </nodes>
       <edges xmi:id="_vOwe8HPGEei-YvDU9wix2w" source="_qM02IHPGEei-YvDU9wix2w" target="_rdUNoHPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Container/parts"/>
@@ -126,6 +129,12 @@
       <edges xmi:id="_wFFC8HPGEei-YvDU9wix2w" source="_pCz6EHPGEei-YvDU9wix2w" target="_q0eE8HPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Machine/out"/>
       </edges>
+      <edges xmi:id="_RrY08IUPEei0FfH_M_cW1g" source="_QCLbcIUPEei0FfH_M_cW1g" target="_rdUNoHPGEei-YvDU9wix2w">
+        <type href="https://inf.kcl.ac.uk/models/pls#//ProductionLineModel/elements"/>
+      </edges>
+      <edges xmi:id="_lCqWMIUQEeix5NK6BRBUTA" source="_QCLbcIUPEei0FfH_M_cW1g" target="_ryJOIHPGEei-YvDU9wix2w">
+        <type href="https://inf.kcl.ac.uk/models/pls#//ProductionLineModel/elements"/>
+      </edges>
     </lhs>
     <rhs xmi:id="_nZ_iJnPGEei-YvDU9wix2w" name="Rhs">
       <nodes xmi:id="_pCz6EXPGEei-YvDU9wix2w" outgoing="_v3GRUXPGEei-YvDU9wix2w _wFFC8XPGEei-YvDU9wix2w">
@@ -137,8 +146,11 @@
       <nodes xmi:id="_q0eE8XPGEei-YvDU9wix2w" incoming="_wFFC8XPGEei-YvDU9wix2w" outgoing="_vpJU4HPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Conveyor"/>
       </nodes>
-      <nodes xmi:id="_sOvqkHPGEei-YvDU9wix2w" incoming="_vpJU4HPGEei-YvDU9wix2w">
+      <nodes xmi:id="_sOvqkHPGEei-YvDU9wix2w" incoming="_vpJU4HPGEei-YvDU9wix2w _R-ohEIUPEei0FfH_M_cW1g">
         <type href="https://inf.kcl.ac.uk/models/pls#//Hammer"/>
+      </nodes>
+      <nodes xmi:id="_RFaaEIUPEei0FfH_M_cW1g" outgoing="_R-ohEIUPEei0FfH_M_cW1g">
+        <type href="https://inf.kcl.ac.uk/models/pls#//ProductionLineModel"/>
       </nodes>
       <edges xmi:id="_vpJU4HPGEei-YvDU9wix2w" source="_q0eE8XPGEei-YvDU9wix2w" target="_sOvqkHPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Container/parts"/>
@@ -149,10 +161,14 @@
       <edges xmi:id="_wFFC8XPGEei-YvDU9wix2w" source="_pCz6EXPGEei-YvDU9wix2w" target="_q0eE8XPGEei-YvDU9wix2w">
         <type href="https://inf.kcl.ac.uk/models/pls#//Machine/out"/>
       </edges>
+      <edges xmi:id="_R-ohEIUPEei0FfH_M_cW1g" source="_RFaaEIUPEei0FfH_M_cW1g" target="_sOvqkHPGEei-YvDU9wix2w">
+        <type href="https://inf.kcl.ac.uk/models/pls#//ProductionLineModel/elements"/>
+      </edges>
     </rhs>
     <mappings xmi:id="_pCz6EnPGEei-YvDU9wix2w" origin="_pCz6EHPGEei-YvDU9wix2w" image="_pCz6EXPGEei-YvDU9wix2w"/>
     <mappings xmi:id="_qM02InPGEei-YvDU9wix2w" origin="_qM02IHPGEei-YvDU9wix2w" image="_qM02IXPGEei-YvDU9wix2w"/>
     <mappings xmi:id="_q0eE8nPGEei-YvDU9wix2w" origin="_q0eE8HPGEei-YvDU9wix2w" image="_q0eE8XPGEei-YvDU9wix2w"/>
+    <mappings xmi:id="_RFaaEYUPEei0FfH_M_cW1g" origin="_QCLbcIUPEei0FfH_M_cW1g" image="_RFaaEIUPEei0FfH_M_cW1g"/>
   </units>
   <units xsi:type="henshin:Rule" xmi:id="_6FWOAHPGEei-YvDU9wix2w" name="moveAlong">
     <lhs xmi:id="_6FWOBXPGEei-YvDU9wix2w" name="Lhs">
