@@ -21,48 +21,69 @@
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
         </nodeMappings>
-        <edgeMappings name="MachineOut" label="out" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHandle'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHead']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Conveyor']" targetFinderExpression="feature:out">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="in" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Tray']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler']" targetFinderExpression="aql:self.eInverse('in')">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="transfer" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Conveyor']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Tray']" targetFinderExpression="feature:tray">
-          <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <containerMappings name="Conveyor" domainClass="Conveyor" childrenPresentation="List">
-          <subNodeMappings name="HammerInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Hammer))" domainClass="Hammer"/>
-          <subNodeMappings name="HeadInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head))" domainClass="Head"/>
-          <subNodeMappings name="HandleInConveyor" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Handle))" domainClass="Handle"/>
-          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" hideLabelByDefault="true" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Conveyor.png">
+        <nodeMappings name="Handle" domainClass="Handle">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Handle.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-        </containerMappings>
-        <containerMappings name="Tray" domainClass="Tray" childrenPresentation="List">
-          <subNodeMappings name="HammerInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Hammer))" domainClass="Hammer"/>
-          <subNodeMappings name="HeadInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Head))" domainClass="Head"/>
-          <subNodeMappings name="HandleInTray" semanticCandidatesExpression="aql:self.parts->select(p | p.oclIsTypeOf(pls::Handle))" domainClass="Handle"/>
-          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Tray.png">
+        </nodeMappings>
+        <nodeMappings name="Head" domainClass="Head">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Head.png">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
           </style>
-        </containerMappings>
+        </nodeMappings>
+        <nodeMappings name="Hammer" domainClass="Hammer">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Hammer.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Conveyor" domainClass="Conveyor">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.parts->size()" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Conveyor.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Tray" domainClass="Tray">
+          <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.parts->size()" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Tray.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="MachineOut" label="out" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHandle'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHead']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Conveyor']" targetFinderExpression="feature:out">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="in" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Tray']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Assembler']" targetFinderExpression="aql:self.eInverse('in')">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="transfer" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Conveyor']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Tray']" targetFinderExpression="feature:tray">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ContainerPartEdge" sourceMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Conveyor'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Tray']" targetMapping="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Handle'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Hammer'] //@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='Head']" targetFinderExpression="feature:parts">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
         <toolSections name="Model creation">
           <ownedTools xsi:type="tool:NodeCreationDescription" name="createGenHandle" label="GenHandle" nodeMappings="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@nodeMappings[name='GenHandle']">
             <variable name="container"/>
@@ -88,24 +109,6 @@
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Assembler" referenceName="elements"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createConveyor" label="Conveyor" containerMappings="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Conveyor']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Conveyor" referenceName="elements"/>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createTray" label="Tray" containerMappings="//@ownedViewpoints[name='Production%20Line%20Systems']/@ownedRepresentations[name='Production%20Line%20Diagram']/@defaultLayer/@containerMappings[name='Tray']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Tray" referenceName="elements"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
