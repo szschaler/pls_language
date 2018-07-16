@@ -557,6 +557,25 @@ public class PLSPackageImpl extends EPackageImpl implements PLSPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// aspect
+		createAspectAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>aspect</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createAspectAnnotations() {
+		String source = "aspect";
+		addAnnotation(getContainer_Parts(), source, new String[] {});
+		addAnnotation(partEClass, source, new String[] {});
+		addAnnotation(hammerEClass, source, new String[] {});
+		addAnnotation(headEClass, source, new String[] {});
+		addAnnotation(handleEClass, source, new String[] {});
 	}
 
 } //PLSPackageImpl
