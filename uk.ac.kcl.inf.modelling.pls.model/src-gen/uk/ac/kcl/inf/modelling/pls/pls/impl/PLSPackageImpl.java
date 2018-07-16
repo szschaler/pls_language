@@ -571,6 +571,7 @@ public class PLSPackageImpl extends EPackageImpl implements PLSPackage {
 	 */
 	protected void createAspectAnnotations() {
 		String source = "aspect";
+		addAnnotation(getProductionLineModel_Elements(), source, new String[] {});
 		addAnnotation(getContainer_Parts(), source, new String[] {});
 		addAnnotation(partEClass, source, new String[] {});
 		addAnnotation(hammerEClass, source, new String[] {});
