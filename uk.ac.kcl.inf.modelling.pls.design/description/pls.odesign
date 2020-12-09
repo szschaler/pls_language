@@ -47,10 +47,11 @@
         </edgeMappings>
         <containerMappings name="ConveyorC" domainClass="Conveyor" childrenPresentation="List">
           <subNodeMappings name="PartNode" semanticCandidatesExpression="feature:parts" domainClass="Part">
-            <style xsi:type="style:BundledImageDescription" labelExpression="aql:self.eClass().name" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:BundledImageDescription" borderSizeComputationExpression="2" labelExpression="aql:self.name+':'+self.eClass().name" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subNodeMappings>
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.parts->size()" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Conveyor.png">
@@ -60,10 +61,11 @@
         </containerMappings>
         <containerMappings name="TrayC" domainClass="Tray" childrenPresentation="List">
           <subNodeMappings name="PartNode" semanticCandidatesExpression="feature:parts" domainClass="Part">
-            <style xsi:type="style:BundledImageDescription" labelExpression="aql:self.eClass().name" labelPosition="node" resizeKind="NSEW">
+            <style xsi:type="style:BundledImageDescription" labelExpression="aql:self.name+':'+self.eClass().name" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
             </style>
           </subNodeMappings>
           <style xsi:type="style:WorkspaceImageDescription" showIcon="false" labelExpression="aql:self.parts->size()" workspacePath="/uk.ac.kcl.inf.modelling.pls.design/icons/Tray.png">
