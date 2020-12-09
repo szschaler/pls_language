@@ -160,6 +160,7 @@ public class PLSActionBarContributor extends EditingDomainActionBarContributor i
 	 */
 	@Override
 	public void contributeToToolBar(IToolBarManager toolBarManager) {
+		super.contributeToToolBar(toolBarManager);
 		toolBarManager.add(new Separator("pls-settings"));
 		toolBarManager.add(new Separator("pls-additions"));
 	}

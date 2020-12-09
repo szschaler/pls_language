@@ -80,7 +80,7 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="GenHandle" referenceName="elements"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="GenHandle" referenceName="machines"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -89,7 +89,7 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="GenHead" referenceName="elements"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="GenHead" referenceName="machines"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -98,7 +98,7 @@
             <viewVariable name="containerView"/>
             <initialOperation>
               <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Assembler" referenceName="elements"/>
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Assembler" referenceName="machines"/>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
