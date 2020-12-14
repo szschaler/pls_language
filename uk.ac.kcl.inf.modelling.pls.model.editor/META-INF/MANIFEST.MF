@@ -2,6 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: uk.ac.kcl.inf.modelling.pls.model.editor;singleton:=true
+Automatic-Module-Name: uk.ac.kcl.inf.modelling.pls.model.editor
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: uk.ac.kcl.inf.modelling.pls.pls.presentation.ModelEditorPlugin$Implementation
