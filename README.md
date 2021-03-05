@@ -22,7 +22,7 @@ The semantics of this modelling language are given by the set of [Henshin](https
 
 ![Semantic Rules](docs/semantic_rules.png)
 
-The top-left rule describes the behaviour of the handle-generating machine. The bottom-left rule shows the behaviour of the head-generating machine. The top-right rule shows how hammers are assembled from heads and handles, while the bottom-right rule shows how parts (heads, handles, hammers) move from conveyor belts to trays.
+The top rule describes the behaviour of the handle-generating machine. The second rule shows the behaviour of the head-generating machine. The bottom-left rule shows how hammers are assembled from heads and handles, while the bottom-right rule shows how parts (heads, handles, hammers) move from conveyor belts to trays.
 
 ## Running the example
 
